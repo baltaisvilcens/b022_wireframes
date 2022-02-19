@@ -156,7 +156,7 @@ h2 {
 }
 
 .parg_title {
-  margin: auto;
+  margin: 36px 0px 10px 0px;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -170,7 +170,6 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 72px;
@@ -190,18 +189,13 @@ h2 {
       justify-content: space-around;
 }
 
-.middle_text {
-  position: absolute;
-  width: 686px;
-  height: 90px;
+.middle_teksts {
+  margin: 24px 0 36px 0;
   left: 80px;
   top: 384px;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.015em;
-  color: rgba(0, 0, 0, 0.8);
 }
 /*# sourceMappingURL=style.css.map */
