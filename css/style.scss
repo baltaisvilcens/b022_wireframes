@@ -1,4 +1,8 @@
 /** @format */
+@function pxToEm($px_size, $defaul_size: 16) {
+  @return $px_size / $defaul_size + 0em;
+}
+
 
 body {
   margin: 0;
@@ -17,9 +21,8 @@ body {
   max-width: 1520px;
   padding: 0 30px;
   height: 60px;
-}
 
-.top_menu > div {
+  > div {
   display: flex;
   align-items: center;
 }
@@ -43,6 +46,7 @@ body {
 .top_menu nav a {
   margin-left: 40px;
 }
+
 
 .btn {
   border: 1px solid #18a0fb;
@@ -90,6 +94,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+ $__title {
+  margin-top: 390px;
 }
 
 h1 {
@@ -99,10 +106,6 @@ h1 {
   text-align: center;
   letter-spacing: -0.015em;
   color: #000000;
-}
-
-.bg_header__title {
-  margin-top: 390px;
 }
 
 .btn_accent {
@@ -330,9 +333,8 @@ h2 {
 .last_cont { 
   background: #f2f2f2;
   display: flex;
-}
 
-.last_cont_paragraph {
+  .paragraph {
   display: flex;
   width: 943px;
   height: 100px;
@@ -357,25 +359,17 @@ h2 {
   margin-top: 144px;
   margin-bottom: 144px;
   justify-content: space-between;
-}
+  }
 
-.last_cont_accent { 
+  .accent { 
   display: flex;
   justify-content: space-around;
   margin-right: 45px;
-}
+  }
 
-.last_cont_right { 
+  .right { 
   display: flex;
   margin-left: 144px;
-}
-
-.footer_main { 
-  background: bkack; 
-}
-
-.footer_mm {
-  background: black;
 }
 
 .footer_top { 
@@ -383,13 +377,11 @@ h2 {
   justify-content: space-around;
   align-items: center;
   margin: 120px 20px 48px 20px;
-}
 
-.tteksts { 
+  .tteksts { 
   display: flex;
-}
 
-.footer_top a { 
+  .a { 
   height: 24px;
   text-decoration: none;
   margin-bottom: 15px;
@@ -439,4 +431,10 @@ h2 {
   text-align: center;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 600px;) {
+  .bg_header {
+    font-size: 10px;
+  }
 }
